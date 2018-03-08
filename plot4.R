@@ -17,6 +17,7 @@ labels <- c('Sub_metering_1','Sub_metering_2','Sub_metering_3')
 plot(power_consumption$DateTime, power_consumption$Sub_metering_1,type="l", col = ColumnLines[1], xlab="", ylab = "Energy sub metering")
 lines(power_consumption$DateTime, power_consumption$Sub_metering_2, col = ColumnLines[2])
 lines(power_consumption$DateTime, power_consumption$Sub_metering_3, col = ColumnLines[3])
+legend("topright", legend=labels, col=ColumnLines, lty="solid")
 ## (2,2)
 plot(power_consumption$DateTime, power_consumption$Global_reactive_power, xlab='datetime', ylab='Global_reactive_power', type='l')
 
