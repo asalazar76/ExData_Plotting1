@@ -14,6 +14,7 @@ if (!file.exists('Data/household_power_consumption.txt')) {
 file.url<-'https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
 download.file(file.url,destfile='Data/household_power_consumption.zip')
 unzip('Data/household_power_consumption.zip',exdir='Data',overwrite=TRUE)
+
 ## Converting TXT into Data Table
 library(data.table)
 source_data<-read.table('Data/household_power_consumption.txt',header=TRUE,
